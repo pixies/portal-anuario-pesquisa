@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'anuario.pesquisador',
 
-    #'cadastro',
 ]
 
 MIDDLEWARE = [
