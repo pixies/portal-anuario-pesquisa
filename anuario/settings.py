@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'cadastro',
+    'anuario.pesquisador',
+
+    #'cadastro',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,10 @@ ROOT_URLCONF = 'anuario.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR+'/templates/', '/Users/cleyton/Projects/Anuario/anuario/anuario/core/templates',
+            ],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,3 +125,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+print(BASE_DIR)
+print(TEMPLATES[0]['DIRS'])
