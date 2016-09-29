@@ -67,5 +67,5 @@ class Curso(models.Model):
 
 
 	def __str__(self):
-		return "%s - %s" % (self.nome_do_curso, self.instituicao)
+		return "%s" % (self.nome_do_curso)
 
