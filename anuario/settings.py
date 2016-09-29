@@ -64,7 +64,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR+'/templates/', '/Users/cleyton/Projects/Anuario/anuario/anuario/core/templates',
+            BASE_DIR+'/templates/', BASE_DIR+'/anuario/core/templates',
             ],
 
         'APP_DIRS': True,
