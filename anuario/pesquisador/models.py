@@ -31,6 +31,15 @@ class Pesquisador(models.Model):
 	)
 
 	titulo = models.CharField('título do pesquisador', max_length=100, choices=opcoes_titulo)
+
+	opcoes_tipo_pesquisador = (
+		('estudante', 'Estudante'),
+		('professor', 'Professor'),
+		('tecnico', 'Técnico'),
+	)
+
+	tipo_pesquisador = models.CharField('sexo do pesquisador', max_length=15, choices=opcoes_tipo_pesquisador)
+
 	curso = models.ForeignKey('Curso')
 
 #	formacoes = models.ManyToManyField('AreaFormacao', through='Formacao', verbose_name='áreas de formação do pesquisador')
