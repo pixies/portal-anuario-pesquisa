@@ -15,6 +15,35 @@
     <body>
 
     {% block navbar %}
+    <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Perfil</a></li>
+  <li class="divider"></li>
+  <li><a href="{% url 'accounts:sair' %}">Sair</a></li>
+</ul>
+
+<div class="navbar-fixed">
+<nav class="teal">
+  <div class="nav-wrapper">
+<div class="container"><a href="#!" class="brand-logo">Anuário</a></div>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="{% url 'core:index' %}">Início</a></li>
+    <li><a href="sass.html">Pesquisas</a></li>
+      <li><a href="sass.html">Pesquisadores</a></li>
+     
+  {% if user.is_authenticated %} 
+      <!-- Dropdown Trigger -->
+      <li><a href="sass.html">Minhas Pesquisas</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">{{user.first_name}} {{user.last_name}}<i class="material-icons right">arrow_drop_down</i></a></li>
+  {% else %}
+      <li><a href="{% url 'accounts:entrar' %}" data-activates="dropdown1">Entrar</a></li>
+      <li><a href="{% url 'accounts:novo' %}" data-activates="dropdown1">Registre-se</a></li>
+  {% endif %}
+
+    </ul>
+  </div>
+</nav>
+</div>
     {% endblock navbar %}
 
     {% block sidebar %}
