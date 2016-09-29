@@ -22,8 +22,6 @@ class Pesquisador(models.Model):
 	email = models.EmailField('e-mail do pesquisador', unique=True)
 
 	opcoes_titulo = (
-		('graduando_bacharel', 'Graduando em Bacharelado'),
-		('graduando_licenciatura', 'Graduando em Licenciatura'),
 		('graduado_bacharel', 'Graduado em Bacharelado'),
 		('graduado_licenciatura', 'Graduado em Licenciatura'),
 		('especialita', 'Especialista'),
