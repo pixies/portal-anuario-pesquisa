@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Perfil</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Sair</a></li>
+</ul>
+
+<div class="navbar-fixed">
+<nav class="teal">
+  <div class="nav-wrapper">
+<div class="container"><a href="#!" class="brand-logo">Anuário</a></div>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">Início</a></li>
+      <li><a href="sass.html">Pesquisas</a></li>
+      <li><a href="sass.html">Pesquisadores</a></li>
+      
+
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">João da Silva<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+{% endblock navbar %}
+
+{% block content %}
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+		<h4 class="header truncate center-align">Anuário de Pesquisa da UFRPE/UAST</h4>
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Começe agora</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="http://www.ufrpe.br/sites/ww2.prppg.ufrpe.br/files/styles/panopoly_image_original/public/uast_10_anos_slide.png?itok=9MwbgG1J" alt="Unsplashed background img 1"></div>
+  </div>
+ {% endblock content %} 
