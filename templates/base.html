@@ -28,8 +28,8 @@
 <div class="container"><a href="#!" class="brand-logo">Anuário</a></div>
     <ul class="right hide-on-med-and-down">
       <li><a href="{% url 'core:index' %}">Início</a></li>
-    <li><a href="sass.html">Pesquisas</a></li>
-      <li><a href="sass.html">Pesquisadores</a></li>
+    <li><a href="#">Pesquisas</a></li>
+      <li><a href="{% url 'pesquisador:todos' %}">Pesquisadores</a></li>
      
   {% if user.is_authenticated %} 
       <!-- Dropdown Trigger -->
