@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('anuario.core.urls', namespace='core')),
     url(r'^conta/', include('anuario.accounts.urls', namespace='accounts')),
+    url(r'^pesquisador/', include('anuario.pesquisador.urls', namespace='pesquisador')),
 ]
 
 if settings.DEBUG:
