@@ -1,3 +1,5 @@
-*~
-db.sqlite3
+
+*.pyc
 .gitignore
+db.sqlite3
+*/__pycache__/*

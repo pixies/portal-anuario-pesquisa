@@ -37,10 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_jenkins',
 
     'anuario.pesquisador',
 
 ]
+
+#JENKINS_TASKS = (
+#    'django_jenkins.tasks.run_pylint',
+#    'django_jenkins.tasks.with_coverage',
+#)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
