@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #'django_jenkins',
 
     'anuario.pesquisador',
+    'anuario.accounts',
 
 ]
 
@@ -130,10 +131,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR + "/static"
+
+print(STATIC_ROOT)
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-print(BASE_DIR)
-print(TEMPLATES[0]['DIRS'])
+print(STATIC_ROOT)
+print(STATICFILES_DIRS)
